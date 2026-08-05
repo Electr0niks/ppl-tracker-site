@@ -13,20 +13,14 @@ Console l'URL publique de la politique de confidentialité (champ obligatoire).
 
 ## ⚠️ À remplir avant de publier
 
-1. **L'e-mail de contact.** Les deux pages pointent vers
-   `contact@ppltracker.app`. Si tu ne possèdes **pas** le domaine
-   `ppltracker.app`, cette adresse ne fonctionne pas — remplace-la partout par
-   une adresse réellement relevée. Google vérifie que l'e-mail de support est
-   joignable, et une politique de confidentialité avec un contact mort est un
-   motif de rejet.
-   - À remplacer dans `index.html` (2 occurrences) et dans
-     `privacy.html` (5 occurrences).
-   - Cherche les commentaires `<!-- TODO -->` pour les repérer.
+1. ~~L'e-mail de contact~~ ✅ **Fait** — `julien.delibes81@gmail.com` est en place
+   dans `index.html`, `privacy.html` et `www/privacy.html` (la copie embarquée
+   dans l'app). Les trois doivent toujours indiquer la même adresse.
 
 2. **Le lien Play Store.** Une fois l'app en ligne, remplace le bouton
    « Bientôt sur Google Play » (`<a class="cta disabled">`) par :
    ```html
-   <a class="cta" href="https://play.google.com/store/apps/details?id=com.ppltracker.app">Télécharger sur Google Play</a>
+   <a class="cta" href="https://play.google.com/store/apps/details?id=com.ppltracker.workout">Télécharger sur Google Play</a>
    ```
    (blocs FR **et** EN)
 
