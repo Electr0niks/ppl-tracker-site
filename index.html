@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PPL Tracker — Carnet de musculation Push Pull Legs</title>
+<meta name="description" content="Ton carnet de musculation Push / Pull / Legs. Suis tes séances, bats tes records. 100 % hors-ligne, aucun compte, aucune publicité.">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
+
+<meta property="og:title" content="PPL Tracker — Carnet de musculation Push Pull Legs">
+<meta property="og:description" content="Suis tes séances Push Pull Legs et bats tes records. 100 % hors-ligne, 0 pub, 0 compte.">
+<meta property="og:type" content="website">
+
+<style>
+  :root {
+    --bg: #111114;
+    --card: #18181c;
+    --card-alt: #16161a;
+    --border: #222228;
+    --border-active: #2a2a32;
+    --accent: #FF6B35;
+    --teal: #4ECDC4;
+    --yellow: #FFE66D;
+    --text: #e8e8f0;
+    --muted: #888899;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+  a { color: var(--accent); }
+
+  /* ── lang switcher ── */
+  .lang-switcher {
+    display: flex; gap: 10px; justify-content: flex-end;
+    padding: 18px 0 0;
+  }
+  .lang-switcher a {
+    font-size: 13px; color: var(--muted); text-decoration: none;
+    padding: 5px 12px; border: 1px solid var(--border); border-radius: 20px;
+    cursor: pointer;
+  }
+  .lang-switcher a.active { color: var(--accent); border-color: var(--accent); }
+
+  [lang-section] { display: none; }
+  [lang-section].visible { display: block; }
+
+  /* ── hero ── */
+  header.hero { text-align: center; padding: 48px 0 56px; }
+  header.hero img.logo {
+    width: 104px; height: 104px; border-radius: 24px; margin-bottom: 26px;
+  }
+  header.hero h1 {
+    font-size: 42px; font-weight: 800; letter-spacing: -0.5px;
+    margin-bottom: 14px; line-height: 1.2;
+  }
+  header.hero h1 span { color: var(--accent); }
+  header.hero p.tagline {
+    font-size: 19px; color: var(--muted); max-width: 560px; margin: 0 auto 30px;
+  }
+
+  .badges { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-bottom: 32px; }
+  .badge {
+    font-size: 13px; font-weight: 600; padding: 7px 15px; border-radius: 20px;
+    background: var(--card); border: 1px solid var(--border-active); color: var(--text);
+  }
+  .badge.teal { color: var(--teal); }
+
+  .cta {
+    display: inline-block; background: var(--accent); color: #fff;
+    text-decoration: none; font-weight: 700; font-size: 16px;
+    padding: 14px 32px; border-radius: 10px;
+  }
+  .cta:hover { background: #e55a25; }
+  .cta.disabled { background: var(--card); color: var(--muted); border: 1px solid var(--border-active); cursor: default; }
+
+  /* ── sections ── */
+  section { padding: 40px 0; border-top: 1px solid var(--border); }
+  section h2 { font-size: 24px; font-weight: 700; margin-bottom: 22px; }
+  section h2 .dot { color: var(--accent); }
+
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .feature {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; padding: 20px;
+  }
+  .feature h3 { font-size: 15px; font-weight: 700; margin-bottom: 6px; color: var(--accent); }
+  .feature p { font-size: 14.5px; color: var(--muted); line-height: 1.65; }
+
+  .pitch {
+    background: linear-gradient(135deg, #17171c, #1a1418);
+    border: 1px solid var(--border-active); border-radius: 14px;
+    padding: 26px 28px;
+  }
+  .pitch ul { list-style: none; }
+  .pitch li { padding: 7px 0 7px 28px; position: relative; font-size: 15.5px; }
+  .pitch li::before {
+    content: "✓"; position: absolute; left: 0; color: var(--teal); font-weight: 700;
+  }
+
+  footer {
+    border-top: 1px solid var(--border); padding: 32px 0 48px;
+    text-align: center; color: var(--muted); font-size: 13.5px;
+  }
+  footer a { color: var(--muted); text-decoration: underline; }
+  footer a:hover { color: var(--accent); }
+  footer .links { margin-bottom: 12px; display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; }
+
+  @media (max-width: 600px) {
+    header.hero h1 { font-size: 32px; }
+    header.hero p.tagline { font-size: 17px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="lang-switcher">
+    <a id="btn-fr" class="active" onclick="showLang('fr')">Français</a>
+    <a id="btn-en" onclick="showLang('en')">English</a>
+  </div>
+
+  <!-- ===================== FRANÇAIS ===================== -->
+  <div id="lang-fr" lang-section="fr" class="visible">
+
+    <header class="hero">
+      <img src="./icon.svg" alt="Icône PPL Tracker" class="logo">
+      <h1>PPL <span>Tracker</span></h1>
+      <p class="tagline">Ton carnet de musculation Push / Pull / Legs, simple et sans distraction.</p>
+      <div class="badges">
+        <span class="badge teal">100 % hors-ligne</span>
+        <span class="badge teal">0 publicité</span>
+        <span class="badge teal">Aucun compte</span>
+        <span class="badge">Pro en achat unique</span>
+      </div>
+      <!-- TODO: remplacer par le lien Play Store une fois l'app publiée -->
+      <a class="cta disabled">Bientôt sur Google Play</a>
+    </header>
+
+    <section>
+      <h2>Conçu pour la salle<span class="dot">.</span></h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Saisie ultra-rapide</h3>
+          <p>Poids × répétitions en deux gestes. Pas de menus, pas de friction entre deux séries.</p>
+        </div>
+        <div class="feature">
+          <h3>Timer de repos automatique</h3>
+          <p>Notification à la seconde près, même quand l'écran est éteint et le téléphone en poche.</p>
+        </div>
+        <div class="feature">
+          <h3>Comparaison avec la dernière séance</h3>
+          <p>Tu vois immédiatement si tu progresses, série par série.</p>
+        </div>
+        <div class="feature">
+          <h3>Records détectés tout seuls</h3>
+          <p>Chaque PR est repéré et célébré sans que tu aies à y penser.</p>
+        </div>
+        <div class="feature">
+          <h3>Classement par muscle</h3>
+          <p>De Débutant à Élite, groupe musculaire par groupe musculaire.</p>
+        </div>
+        <div class="feature">
+          <h3>Volume et progression</h3>
+          <p>Volume hebdomadaire, graphiques par exercice, suivi du poids de corps.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Tes données t'appartiennent<span class="dot">.</span></h2>
+      <div class="pitch">
+        <ul>
+          <li>Tout est stocké sur ton téléphone, rien n'est envoyé nulle part</li>
+          <li>Aucune donnée collectée, aucun tracker, aucun analytics</li>
+          <li>Aucun compte à créer, aucun e-mail à donner</li>
+          <li>Export CSV / JSON à tout moment, dans des formats ouverts</li>
+          <li>Pas d'abonnement : Pro est un achat unique, à vie</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Gratuit, Pro en achat unique<span class="dot">.</span></h2>
+      <p style="color:var(--muted)">
+        La version gratuite couvre l'essentiel pour t'entraîner sérieusement.
+        Pro débloque les statistiques avancées, tous les graphiques, le suivi du
+        poids de corps et l'export de tes données — en un seul achat, sans
+        abonnement.
+      </p>
+    </section>
+
+    <footer>
+      <div class="links">
+        <a href="./privacy.html">Politique de confidentialité</a>
+        <!-- TODO: mettre ton e-mail de support réel -->
+        <a href="mailto:contact@ppltracker.app">Contact</a>
+      </div>
+      <p>PPL Tracker &copy; 2026</p>
+    </footer>
+
+  </div><!-- /lang-fr -->
+
+  <!-- ===================== ENGLISH ===================== -->
+  <div id="lang-en" lang-section="en">
+
+    <header class="hero">
+      <img src="./icon.svg" alt="PPL Tracker icon" class="logo">
+      <h1>PPL <span>Tracker</span></h1>
+      <p class="tagline">Your Push / Pull / Legs workout log — simple, fast, distraction-free.</p>
+      <div class="badges">
+        <span class="badge teal">100% offline</span>
+        <span class="badge teal">No ads</span>
+        <span class="badge teal">No account</span>
+        <span class="badge">One-time Pro</span>
+      </div>
+      <!-- TODO: replace with the Play Store link once published -->
+      <a class="cta disabled">Coming soon on Google Play</a>
+    </header>
+
+    <section>
+      <h2>Built for the gym<span class="dot">.</span></h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Lightning-fast logging</h3>
+          <p>Weight × reps in two taps. No menus, no friction between sets.</p>
+        </div>
+        <div class="feature">
+          <h3>Automatic rest timer</h3>
+          <p>Notification on time, even with the screen off and the phone in your pocket.</p>
+        </div>
+        <div class="feature">
+          <h3>Compare with your last session</h3>
+          <p>See instantly whether you're progressing, set by set.</p>
+        </div>
+        <div class="feature">
+          <h3>PRs detected automatically</h3>
+          <p>Every personal record is spotted and celebrated without you thinking about it.</p>
+        </div>
+        <div class="feature">
+          <h3>Strength ranking per muscle</h3>
+          <p>From Beginner to Elite, muscle group by muscle group.</p>
+        </div>
+        <div class="feature">
+          <h3>Volume and progress</h3>
+          <p>Weekly volume, per-exercise charts, body-weight tracking.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Your data stays yours<span class="dot">.</span></h2>
+      <div class="pitch">
+        <ul>
+          <li>Everything is stored on your phone, nothing is sent anywhere</li>
+          <li>No data collected, no trackers, no analytics</li>
+          <li>No account to create, no email to hand over</li>
+          <li>CSV / JSON export any time, in open formats</li>
+          <li>No subscription: Pro is a one-time purchase, forever</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Free, with a one-time Pro<span class="dot">.</span></h2>
+      <p style="color:var(--muted)">
+        The free version covers everything you need to train seriously.
+        Pro unlocks advanced stats, all charts, body-weight tracking and data
+        export — a single purchase, no subscription.
+      </p>
+    </section>
+
+    <footer>
+      <div class="links">
+        <a href="./privacy.html">Privacy Policy</a>
+        <!-- TODO: use your real support email -->
+        <a href="mailto:contact@ppltracker.app">Contact</a>
+      </div>
+      <p>PPL Tracker &copy; 2026</p>
+    </footer>
+
+  </div><!-- /lang-en -->
+
+</div>
+
+<script>
+  function showLang(lang) {
+    document.querySelectorAll('[lang-section]').forEach(function (el) {
+      el.classList.remove('visible');
+    });
+    document.getElementById('lang-' + lang).classList.add('visible');
+    document.getElementById('btn-fr').classList.remove('active');
+    document.getElementById('btn-en').classList.remove('active');
+    document.getElementById('btn-' + lang).classList.add('active');
+    document.documentElement.lang = lang;
+  }
+
+  var userLang = (navigator.language || 'fr').toLowerCase();
+  if (!userLang.startsWith('fr')) showLang('en');
+</script>
+
+</body>
+</html>

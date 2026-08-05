@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — PPL Tracker</title>
+  <style>
+    :root {
+      --bg: #111114;
+      --card: #18181c;
+      --text: #e8e8f0;
+      --muted: #888899;
+      --accent: #FF6B35;
+      --border: #2a2a32;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      padding: 24px 16px 64px;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      padding: 32px 0 40px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    header p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .lang-switcher {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 16px;
+    }
+
+    .lang-switcher a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 14px;
+      padding: 4px 12px;
+      border: 1px solid var(--accent);
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .lang-switcher a:hover,
+    .lang-switcher a.active {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+
+    p {
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    li {
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .highlight {
+      background: rgba(255, 107, 53, 0.1);
+      border-left: 3px solid var(--accent);
+      padding: 12px 16px;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 12px;
+    }
+
+    .highlight p {
+      margin-bottom: 0;
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    [lang-section] {
+      display: none;
+    }
+
+    [lang-section].visible {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>PPL Tracker</h1>
+      <p>Privacy Policy / Politique de confidentialité</p>
+      <div class="lang-switcher">
+        <a id="btn-en" class="active" onclick="showLang('en')">English</a>
+        <a id="btn-fr" onclick="showLang('fr')">Français</a>
+      </div>
+    </header>
+
+    <!-- ===================== ENGLISH ===================== -->
+    <div id="lang-en" lang-section="en" class="visible">
+
+      <section>
+        <h2>Privacy Policy</h2>
+        <p><strong>App:</strong> PPL Tracker<br>
+           <strong>Developer:</strong> Independent developer<br>
+           <strong>Contact:</strong> <a href="mailto:contact@ppltracker.app">contact@ppltracker.app</a><br>
+           <strong>Last updated:</strong> August 2026</p>
+      </section>
+
+      <section>
+        <div class="highlight">
+          <p>PPL Tracker does not collect, transmit, or share any personal data. All data stays on your device.</p>
+        </div>
+        <h2>Data Collection</h2>
+        <p>PPL Tracker stores the following data <strong>locally on your device</strong> using the browser's localStorage API:</p>
+        <ul>
+          <li>Workout sessions (exercises, sets, reps, weights, dates)</li>
+          <li>Exercise preferences and custom settings</li>
+          <li>Body weight entries</li>
+          <li>App preferences (language, units)</li>
+        </ul>
+        <p>This data <strong>never leaves your device</strong>. It is not sent to any server, cloud service, or third party.</p>
+      </section>
+
+      <section>
+        <h2>What We Do Not Collect</h2>
+        <ul>
+          <li>No name, email address, or contact information</li>
+          <li>No location data</li>
+          <li>No device identifiers</li>
+          <li>No usage analytics or crash reports</li>
+          <li>No advertising identifiers</li>
+          <li>No cookies (beyond standard WebView behavior)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Third-Party Services</h2>
+        <p>PPL Tracker may use <strong>Google Play Billing</strong> for in-app purchases (Pro features). When you make a purchase, the transaction is handled entirely by Google. We do not receive or store your payment information.</p>
+        <p>Google's privacy practices apply to purchase transactions. You can review Google's Privacy Policy at: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
+        <p>No other third-party SDKs, analytics tools, or advertising networks are integrated in this app.</p>
+      </section>
+
+      <section>
+        <h2>Your Data Rights</h2>
+        <p>Because all data is stored locally on your device, you have full control:</p>
+        <ul>
+          <li><strong>Export:</strong> You can export all your data as JSON or CSV from within the app at any time.</li>
+          <li><strong>Delete:</strong> You can delete all data from the app's settings, or by uninstalling the app.</li>
+          <li><strong>Portability:</strong> Exported data is in open formats you can use with any other application.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Data Security</h2>
+        <p>Your data is protected by your device's security mechanisms (screen lock, encryption if enabled). Since no data is transmitted, there is no risk of interception in transit.</p>
+      </section>
+
+      <section>
+        <h2>Children's Privacy</h2>
+        <p>PPL Tracker is not directed at children under 13. We do not knowingly collect any information from children.</p>
+      </section>
+
+      <section>
+        <h2>Changes to This Policy</h2>
+        <p>If this privacy policy changes materially, we will update the "Last updated" date and, where possible, notify users via an app update.</p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>For any questions about this privacy policy, contact us at:<br>
+           <a href="mailto:contact@ppltracker.app">contact@ppltracker.app</a></p>
+      </section>
+
+    </div><!-- /lang-en -->
+
+    <!-- ===================== FRENCH ===================== -->
+    <div id="lang-fr" lang-section="fr">
+
+      <section>
+        <h2>Politique de confidentialité</h2>
+        <p><strong>Application :</strong> PPL Tracker<br>
+           <strong>Développeur :</strong> Développeur indépendant<br>
+           <strong>Contact :</strong> <a href="mailto:contact@ppltracker.app">contact@ppltracker.app</a><br>
+           <strong>Dernière mise à jour :</strong> Août 2026</p>
+      </section>
+
+      <section>
+        <div class="highlight">
+          <p>PPL Tracker ne collecte, ne transmet et ne partage aucune donnée personnelle. Toutes vos données restent sur votre appareil.</p>
+        </div>
+        <h2>Données collectées</h2>
+        <p>PPL Tracker stocke les données suivantes <strong>localement sur votre appareil</strong> via l'API localStorage du navigateur :</p>
+        <ul>
+          <li>Séances d'entraînement (exercices, séries, répétitions, charges, dates)</li>
+          <li>Préférences d'exercices et paramètres personnalisés</li>
+          <li>Entrées de poids corporel</li>
+          <li>Préférences de l'application (langue, unités)</li>
+        </ul>
+        <p>Ces données <strong>ne quittent jamais votre appareil</strong>. Elles ne sont envoyées à aucun serveur, service cloud ou tiers.</p>
+      </section>
+
+      <section>
+        <h2>Ce que nous ne collectons pas</h2>
+        <ul>
+          <li>Aucun nom, adresse e-mail ou information de contact</li>
+          <li>Aucune donnée de localisation</li>
+          <li>Aucun identifiant d'appareil</li>
+          <li>Aucune analyse d'utilisation ni rapport de crash</li>
+          <li>Aucun identifiant publicitaire</li>
+          <li>Aucun cookie (hormis le comportement standard de la WebView)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Services tiers</h2>
+        <p>PPL Tracker peut utiliser <strong>Google Play Billing</strong> pour les achats intégrés (fonctionnalités Pro). Lors d'un achat, la transaction est entièrement gérée par Google. Nous ne recevons ni ne stockons vos informations de paiement.</p>
+        <p>Les pratiques de confidentialité de Google s'appliquent aux transactions d'achat. Vous pouvez consulter la politique de confidentialité de Google sur : <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></p>
+        <p>Aucun autre SDK tiers, outil d'analyse ou réseau publicitaire n'est intégré dans cette application.</p>
+      </section>
+
+      <section>
+        <h2>Vos droits sur vos données</h2>
+        <p>Toutes les données étant stockées localement sur votre appareil, vous en avez le contrôle total :</p>
+        <ul>
+          <li><strong>Exporter :</strong> Vous pouvez exporter toutes vos données en JSON ou CSV depuis l'application à tout moment.</li>
+          <li><strong>Supprimer :</strong> Vous pouvez supprimer toutes vos données depuis les paramètres de l'application, ou en désinstallant l'application.</li>
+          <li><strong>Portabilité :</strong> Les données exportées sont dans des formats ouverts utilisables avec n'importe quelle autre application.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Sécurité des données</h2>
+        <p>Vos données sont protégées par les mécanismes de sécurité de votre appareil (verrouillage d'écran, chiffrement si activé). Comme aucune donnée n'est transmise, il n'y a aucun risque d'interception en transit.</p>
+      </section>
+
+      <section>
+        <h2>Confidentialité des mineurs</h2>
+        <p>PPL Tracker ne s'adresse pas aux enfants de moins de 13 ans. Nous ne collectons sciemment aucune information auprès des enfants.</p>
+      </section>
+
+      <section>
+        <h2>Modifications de cette politique</h2>
+        <p>En cas de modification substantielle de cette politique de confidentialité, nous mettrons à jour la date de « Dernière mise à jour » et, dans la mesure du possible, informerons les utilisateurs via une mise à jour de l'application.</p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>Pour toute question concernant cette politique de confidentialité, contactez-nous à :<br>
+           <a href="mailto:contact@ppltracker.app">contact@ppltracker.app</a></p>
+      </section>
+
+    </div><!-- /lang-fr -->
+
+    <footer>
+      <p><a href="./index.html">← PPL Tracker</a></p>
+      <p style="margin-top:8px;">PPL Tracker &copy; 2026 — Independent Developer</p>
+      <p style="margin-top:8px;">
+        <a href="mailto:contact@ppltracker.app">contact@ppltracker.app</a>
+      </p>
+    </footer>
+
+  </div><!-- /container -->
+
+  <script>
+    function showLang(lang) {
+      document.querySelectorAll('[lang-section]').forEach(function(el) {
+        el.classList.remove('visible');
+      });
+      document.getElementById('lang-' + lang).classList.add('visible');
+      document.getElementById('btn-en').classList.remove('active');
+      document.getElementById('btn-fr').classList.remove('active');
+      document.getElementById('btn-' + lang).classList.add('active');
+    }
+
+    // Auto-detect language
+    var userLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+    if (userLang.startsWith('fr')) {
+      showLang('fr');
+    }
+  </script>
+
+</body>
+</html>
