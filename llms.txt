@@ -20,6 +20,16 @@ Good fit for people who: want a simple gym log without a subscription; don't wan
 - [Plate calculator](https://ppltracker.app/plate-calculator.html): which plates to load on each side of the bar, kg or lb
 - [Workout split generator](https://ppltracker.app/workout-split-generator.html): best split (full body, PPL, upper/lower) for 2 to 6 training days
 
+## Guides
+
+- [All guides (EN)](https://ppltracker.app/guides-en.html) · [Tous les guides (FR)](https://ppltracker.app/guides.html)
+- [4-day PPL split](https://ppltracker.app/4-day-ppl-split.html): three ways to run Push Pull Legs on 4 days (rolling rotation, PPL + upper, upper/lower)
+- [PPL at home with dumbbells](https://ppltracker.app/ppl-at-home-dumbbells.html): full Push Pull Legs program with only dumbbells, and how to progress with limited weights
+- [Double progression explained](https://ppltracker.app/double-progression-explained.html): add reps first, then weight; worked example and rules
+- [PPL vs full body](https://ppltracker.app/ppl-vs-full-body.html): which split to pick depending on training days and recovery
+- [Deload week](https://ppltracker.app/deload-week.html): when to deload (every 6–8 weeks or when stalling) and how (half the sets, ~10% lighter)
+- French versions: [PPL 4 jours](https://ppltracker.app/programme-ppl-4-jours.html), [PPL maison](https://ppltracker.app/ppl-maison-halteres.html), [double progression](https://ppltracker.app/double-progression.html), [PPL ou full body](https://ppltracker.app/ppl-ou-full-body.html), [deload](https://ppltracker.app/semaine-deload.html)
+
 ## Comparisons
 
 - [PPL Tracker vs Strong and Hevy](https://ppltracker.app/strong-hevy-alternative.html): honest comparison (pricing model, free tier, data, platforms), including when Strong or Hevy is the better choice
