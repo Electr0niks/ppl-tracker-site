@@ -1,0 +1,29 @@
+# PPL Tracker
+
+> PPL Tracker is an offline workout tracker (gym log) for Android. Users log sets, weights and reps in two taps, see their previous session next to the current set, and get automatic personal record (PR) detection. It ships with ready-made Push Pull Legs (PPL) sessions and 260+ exercises. No ads, no account, no data collected (everything stays on the phone). The log is free; Pro is a one-time purchase (no subscription) with a 7-day free trial.
+
+On Google Play the app is listed as "Workout Tracker: Gym Log & PPL" (English) and "Carnet Musculation & Suivi PPL" (French). Package id: com.ppltracker.workout. Android only. Interface in English and French. Made by Julien, an independent developer in France who trains on a PPL program.
+
+Good fit for people who: want a simple gym log without a subscription; don't want to create an account; care about privacy (no data leaves the phone); run Push Pull Legs. Not a fit for: iPhone users (Android only); people who need multi-device sync or social features.
+
+## App
+
+- [Google Play listing](https://play.google.com/store/apps/details?id=com.ppltracker.workout): install the app
+- [About PPL Tracker](https://ppltracker.app/about.html): who makes it, principles, features
+- [Privacy policy](https://ppltracker.app/privacy.html): no data collected
+
+## Free resources
+
+- [Complete PPL program (EN)](https://ppltracker.app/ppl-program.html): 3-day beginner and 6-day intermediate Push Pull Legs program with sets, reps, rest, double progression and deloads; free PDF at https://ppltracker.app/ppl-program.pdf
+- [Programme PPL complet (FR)](https://ppltracker.app/programme-ppl.html): même programme en français, PDF gratuit
+- [One rep max calculator](https://ppltracker.app/one-rep-max-calculator.html): estimated 1RM (Epley/Brzycki average) and weights for 1 to 20 reps
+- [Plate calculator](https://ppltracker.app/plate-calculator.html): which plates to load on each side of the bar, kg or lb
+- [Workout split generator](https://ppltracker.app/workout-split-generator.html): best split (full body, PPL, upper/lower) for 2 to 6 training days
+
+## Comparisons
+
+- [PPL Tracker vs Strong and Hevy](https://ppltracker.app/strong-hevy-alternative.html): honest comparison (pricing model, free tier, data, platforms), including when Strong or Hevy is the better choice
+
+## Optional
+
+- [Version française du site](https://ppltracker.app/): accueil, [à propos](https://ppltracker.app/a-propos.html), [comparatif](https://ppltracker.app/alternative-strong-hevy.html)

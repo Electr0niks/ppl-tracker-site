@@ -17,6 +17,55 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="./icon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="./assets/site.css">
+<!-- jsonld:start -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebApplication",
+   "@id": "https://ppltracker.app/calculateur-disques.html#tool",
+   "name": "Calculateur de disques pour la barre",
+   "url": "https://ppltracker.app/calculateur-disques.html",
+   "applicationCategory": "HealthApplication",
+   "operatingSystem": "Web",
+   "inLanguage": "fr",
+   "isAccessibleForFree": true,
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+   },
+   "publisher": {
+    "@id": "https://ppltracker.app/#org"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Pourquoi la charge exacte n'est-elle pas possible ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Chaque côté doit porter le même poids. Avec des disques de 1,25 kg au minimum, la charge totale avance par pas de 2,5 kg. Sans disques de 1,25 kg, par pas de 5 kg."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Comment connaître la charge à viser ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Le calculateur de 1RM te donne les charges pour chaque nombre de répétitions. Les séances détaillées sont dans le programme PPL gratuit."
+     }
+    }
+   ],
+   "@id": "https://ppltracker.app/calculateur-disques.html#faq"
+  }
+ ]
+}
+</script>
+<!-- jsonld:end -->
 </head>
 <body data-tool="plates">
 <div class="container">
@@ -96,7 +145,8 @@
       <a href="./calculateur-1rm.html">Calculateur 1RM</a>
       <a href="./generateur-split.html">Générateur de split</a>
       <a href="./alternative-strong-hevy.html">Alternative à Strong et Hevy</a>
-      <a href="./privacy.html">Confidentialité</a>
+      <a href="./a-propos.html">À propos</a>
+        <a href="./privacy.html">Confidentialité</a>
     </div>
     <p>PPL Tracker &copy; 2026</p>
   </footer>
