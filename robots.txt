@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://electr0niks.github.io/ppl-tracker-site/sitemap.xml
+Sitemap: https://ppltracker.app/sitemap.xml
