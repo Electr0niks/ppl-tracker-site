@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barbell Plate Calculator: what to load on each side (kg or lb)</title>
+<meta name="description" content="Enter your target weight and see exactly which plates go on each side of the bar. 20, 15 or 10 kg bar, collars, your gym's plates. Free, kg or lb.">
+<link rel="canonical" href="https://electr0niks.github.io/ppl-tracker-site/plate-calculator.html">
+<link rel="alternate" hreflang="en" href="https://electr0niks.github.io/ppl-tracker-site/plate-calculator.html">
+<link rel="alternate" hreflang="fr" href="https://electr0niks.github.io/ppl-tracker-site/calculateur-disques.html">
+<link rel="alternate" hreflang="x-default" href="https://electr0niks.github.io/ppl-tracker-site/plate-calculator.html">
+<meta property="og:title" content="Barbell Plate Calculator">
+<meta property="og:description" content="Which plates to load on each side of the bar to hit your target.">
+<meta property="og:image" content="https://electr0niks.github.io/ppl-tracker-site/icon-512.png">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./assets/site.css">
+</head>
+<body data-tool="plates">
+<div class="container">
+
+  <header class="topbar">
+    <a class="brand" href="./"><img src="./icon-192.png" alt="" width="32" height="32">PPL <span>Tracker</span></a>
+    <nav class="topnav" aria-label="Resources">
+      <a href="./ppl-program.html">PPL program</a>
+      <a href="./one-rep-max-calculator.html">1RM calculator</a>
+      <a href="./plate-calculator.html" aria-current="page">Plates</a>
+      <a href="./workout-split-generator.html">Split</a>
+      <a href="./calculateur-disques.html" lang="fr">FR</a>
+    </nav>
+  </header>
+
+  <div class="page-head">
+    <div class="kicker">Free tool</div>
+    <h1>Barbell plate calculator<span class="dot">.</span></h1>
+    <p class="lead">Enter your target weight and instantly see which plates go <strong>on each side</strong> of the bar. No more mental math between sets.</p>
+  </div>
+
+  <div class="tool">
+    <div class="row">
+      <div class="field">
+        <label for="target">Target total weight</label>
+        <input id="target" type="number" inputmode="decimal" min="0" step="0.5" value="100">
+      </div>
+      <div class="field">
+        <label for="bar">Bar</label>
+        <select id="bar"></select>
+      </div>
+      <div class="field">
+        <label>Unit</label>
+        <div class="seg" id="unit" role="group" aria-label="Unit">
+          <button type="button" data-value="kg" aria-pressed="true">kg</button>
+          <button type="button" data-value="lb" aria-pressed="false">lb</button>
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <label>Available plates</label>
+      <div class="chips" id="avail"></div>
+    </div>
+    <div class="chips">
+      <label><input type="checkbox" id="collars"> Competition collars (<span id="collarLabel">2.5 kg</span> each)</label>
+    </div>
+    <div class="result" id="out" aria-live="polite" hidden></div>
+  </div>
+
+  <section>
+    <h2>How to use it<span class="dot">.</span></h2>
+    <p>Pick your gym's bar: a standard Olympic bar weighs <strong>20 kg (45 lb)</strong>, a women's bar <strong>15 kg</strong>, technique or short bars often <strong>10 kg</strong>. Untick plates your gym doesn't have: the calculator adapts and tells you when the exact weight can't be reached.</p>
+    <p>Regular spring clips weigh a few grams and can be ignored. Competition collars weigh 2.5 kg each: tick the box if you use them.</p>
+  </section>
+
+  <div class="app-cta">
+    <img src="./icon-192.png" alt="" width="64" height="64">
+    <div class="txt">
+      <strong>Log your weights in two taps</strong>
+      <p>PPL Tracker remembers every set and shows your last session next to your current one, so you always know what to load. Free, no ads, no account.</p>
+    </div>
+    <a class="btn" href="https://play.google.com/store/apps/details?id=com.ppltracker.workout&amp;hl=en&amp;referrer=utm_source%3Dsite%26utm_medium%3Dplate_calculator">Get the app</a>
+  </div>
+
+  <section>
+    <h2>FAQ<span class="dot">.</span></h2>
+    <h3>Why can't I hit the exact weight?</h3>
+    <p>Both sides must carry the same load. With 1.25 kg plates as the smallest, the total moves in 2.5 kg steps; without them, in 5 kg steps.</p>
+    <h3>How do I know what weight to aim for?</h3>
+    <p>The <a href="./one-rep-max-calculator.html">1RM calculator</a> gives you weights for every rep count. Full sessions are in the <a href="./ppl-program.html">free PPL program</a>.</p>
+  </section>
+
+  <footer>
+    <div class="links">
+      <a href="./">PPL Tracker</a>
+      <a href="./ppl-program.html">PPL program</a>
+      <a href="./one-rep-max-calculator.html">1RM calculator</a>
+      <a href="./workout-split-generator.html">Split generator</a>
+      <a href="./strong-hevy-alternative.html">Strong &amp; Hevy alternative</a>
+      <a href="./privacy.html">Privacy</a>
+    </div>
+    <p>PPL Tracker &copy; 2026</p>
+  </footer>
+</div>
+<script src="./assets/tools.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Générateur de split musculation : quel programme selon tes jours d'entraînement</title>
+<meta name="description" content="Combien de séances par semaine ? Le générateur te propose le split adapté (full body, PPL, haut/bas, PPL ×2) et le planning de la semaine. Gratuit, sans inscription.">
+<link rel="canonical" href="https://electr0niks.github.io/ppl-tracker-site/generateur-split.html">
+<link rel="alternate" hreflang="fr" href="https://electr0niks.github.io/ppl-tracker-site/generateur-split.html">
+<link rel="alternate" hreflang="en" href="https://electr0niks.github.io/ppl-tracker-site/workout-split-generator.html">
+<link rel="alternate" hreflang="x-default" href="https://electr0niks.github.io/ppl-tracker-site/workout-split-generator.html">
+<meta property="og:title" content="Générateur de split musculation">
+<meta property="og:description" content="Le bon split et le planning de ta semaine selon ton nombre de séances.">
+<meta property="og:image" content="https://electr0niks.github.io/ppl-tracker-site/icon-512.png">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./assets/site.css">
+</head>
+<body data-tool="split" data-program="./programme-ppl.html">
+<div class="container">
+
+  <header class="topbar">
+    <a class="brand" href="./"><img src="./icon-192.png" alt="" width="32" height="32">PPL <span>Tracker</span></a>
+    <nav class="topnav" aria-label="Ressources">
+      <a href="./programme-ppl.html">Programme PPL</a>
+      <a href="./calculateur-1rm.html">Calculateur 1RM</a>
+      <a href="./calculateur-disques.html">Disques</a>
+      <a href="./generateur-split.html" aria-current="page">Split</a>
+      <a href="./workout-split-generator.html" lang="en">EN</a>
+    </nav>
+  </header>
+
+  <div class="page-head">
+    <div class="kicker">Outil gratuit</div>
+    <h1>Quel split pour combien de séances<span class="dot">?</span></h1>
+    <p class="lead">Indique combien de jours tu peux t'entraîner et ton niveau : tu obtiens le split le plus adapté et le planning de ta semaine.</p>
+  </div>
+
+  <div class="tool">
+    <div class="field">
+      <label>Séances par semaine</label>
+      <div class="seg" id="days" role="group" aria-label="Séances par semaine">
+        <button type="button" data-value="2" aria-pressed="false">2</button>
+        <button type="button" data-value="3" aria-pressed="true">3</button>
+        <button type="button" data-value="4" aria-pressed="false">4</button>
+        <button type="button" data-value="5" aria-pressed="false">5</button>
+        <button type="button" data-value="6" aria-pressed="false">6</button>
+      </div>
+    </div>
+    <div class="field">
+      <label>Niveau</label>
+      <div class="seg" id="level" role="group" aria-label="Niveau">
+        <button type="button" data-value="beg" aria-pressed="true">Débutant</button>
+        <button type="button" data-value="int" aria-pressed="false">Intermédiaire</button>
+      </div>
+    </div>
+    <div class="result" id="out" aria-live="polite" hidden></div>
+  </div>
+
+  <section>
+    <h2>Les splits en bref<span class="dot">.</span></h2>
+    <div class="grid">
+      <div class="card"><h3 style="margin-top:0">Full body</h3><p class="muted">Tout le corps à chaque séance. Le meilleur choix avec 2 séances, ou pour reprendre après une pause.</p></div>
+      <div class="card"><h3 style="margin-top:0">Push Pull Legs</h3><p class="muted">Pousser, tirer, jambes. Simple à suivre, idéal sur 3 jours (débutant) ou 6 jours (avancé).</p></div>
+      <div class="card"><h3 style="margin-top:0">Haut / Bas</h3><p class="muted">Haut du corps, bas du corps, deux fois. Le bon compromis sur 4 jours.</p></div>
+    </div>
+    <p style="margin-top:14px">Le meilleur split, c'est celui que tu tiens dans la durée. Mieux vaut 3 séances par semaine pendant un an que 6 pendant un mois.</p>
+  </section>
+
+  <div class="app-cta">
+    <img src="./icon-192.png" alt="" width="64" height="64">
+    <div class="txt">
+      <strong>Ton programme de la semaine, dans ta poche</strong>
+      <p>PPL Tracker te propose la prochaine séance et suit ta régularité semaine après semaine. Gratuit, sans pub, sans compte.</p>
+    </div>
+    <a class="btn" href="https://play.google.com/store/apps/details?id=com.ppltracker.workout&amp;hl=fr&amp;referrer=utm_source%3Dsite%26utm_medium%3Dgenerateur_split">Télécharger l'appli</a>
+  </div>
+
+  <section>
+    <h2>Questions fréquentes<span class="dot">.</span></h2>
+    <h3>Mes jours changent chaque semaine, comment faire ?</h3>
+    <p>Ne pense pas en jours mais en ordre : enchaîne les séances dans l'ordre (Push, Pull, Legs, Push…) dès que tu peux aller à la salle, avec au moins un jour de repos tous les 2 ou 3 jours d'entraînement.</p>
+    <h3>Combien de séances pour progresser ?</h3>
+    <p>Trois séances bien faites suffisent largement pour progresser pendant des mois. Ajouter des séances n'aide que si tu récupères bien (sommeil, alimentation).</p>
+  </section>
+
+  <footer>
+    <div class="links">
+      <a href="./">PPL Tracker</a>
+      <a href="./programme-ppl.html">Programme PPL</a>
+      <a href="./calculateur-1rm.html">Calculateur 1RM</a>
+      <a href="./calculateur-disques.html">Calculateur de disques</a>
+      <a href="./alternative-strong-hevy.html">Alternative à Strong et Hevy</a>
+      <a href="./privacy.html">Confidentialité</a>
+    </div>
+    <p>PPL Tracker &copy; 2026</p>
+  </footer>
+</div>
+<script src="./assets/tools.js"></script>
+</body>
+</html>

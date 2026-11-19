@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculateur 1RM gratuit : estime ta charge maximale et tes charges de travail</title>
+<meta name="description" content="Calcule ton 1RM (répétition maximale) à partir d'une série, sans tester ton max. Tableau des charges pour 1 à 20 répétitions, en kg ou en livres. Gratuit, sans inscription.">
+<link rel="canonical" href="https://electr0niks.github.io/ppl-tracker-site/calculateur-1rm.html">
+<link rel="alternate" hreflang="fr" href="https://electr0niks.github.io/ppl-tracker-site/calculateur-1rm.html">
+<link rel="alternate" hreflang="en" href="https://electr0niks.github.io/ppl-tracker-site/one-rep-max-calculator.html">
+<link rel="alternate" hreflang="x-default" href="https://electr0niks.github.io/ppl-tracker-site/one-rep-max-calculator.html">
+<meta property="og:title" content="Calculateur 1RM gratuit">
+<meta property="og:description" content="Estime ta charge maximale à partir d'une série et obtiens tes charges pour chaque nombre de répétitions.">
+<meta property="og:image" content="https://electr0niks.github.io/ppl-tracker-site/icon-512.png">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./assets/site.css">
+</head>
+<body data-tool="1rm">
+<div class="container">
+
+  <header class="topbar">
+    <a class="brand" href="./"><img src="./icon-192.png" alt="" width="32" height="32">PPL <span>Tracker</span></a>
+    <nav class="topnav" aria-label="Ressources">
+      <a href="./programme-ppl.html">Programme PPL</a>
+      <a href="./calculateur-1rm.html" aria-current="page">Calculateur 1RM</a>
+      <a href="./calculateur-disques.html">Disques</a>
+      <a href="./generateur-split.html">Split</a>
+      <a href="./one-rep-max-calculator.html" lang="en">EN</a>
+    </nav>
+  </header>
+
+  <div class="page-head">
+    <div class="kicker">Outil gratuit</div>
+    <h1>Calculateur de 1RM<span class="dot">.</span></h1>
+    <p class="lead">Entre une série que tu as faite (charge et répétitions) : tu obtiens ton <strong>1RM estimé</strong> et les charges à utiliser pour chaque nombre de répétitions. Sans avoir à tester ton maximum.</p>
+  </div>
+
+  <div class="tool">
+    <div class="row">
+      <div class="field">
+        <label for="w">Charge soulevée</label>
+        <input id="w" type="number" inputmode="decimal" min="0" step="0.5" value="80">
+      </div>
+      <div class="field">
+        <label for="r">Répétitions</label>
+        <input id="r" type="number" inputmode="numeric" min="1" max="30" step="1" value="6">
+      </div>
+      <div class="field">
+        <label>Unité</label>
+        <div class="seg" id="unit" role="group" aria-label="Unité">
+          <button type="button" data-value="kg" aria-pressed="true">kg</button>
+          <button type="button" data-value="lb" aria-pressed="false">lb</button>
+        </div>
+      </div>
+    </div>
+    <div class="result" id="out" aria-live="polite" hidden></div>
+  </div>
+
+  <section>
+    <h2>Comment c'est calculé<span class="dot">.</span></h2>
+    <p>Le 1RM (one-rep max) est la charge maximale que tu peux soulever une seule fois. Le calculateur fait la moyenne de deux formules reconnues :</p>
+    <ul class="list">
+      <li><strong>Epley</strong> : charge × (1 + répétitions / 30)</li>
+      <li><strong>Brzycki</strong> : charge × 36 / (37 − répétitions)</li>
+    </ul>
+    <p>Les deux sont fiables entre 2 et 10 répétitions. Au-delà, l'estimation dépend beaucoup de ton endurance musculaire. Les charges du tableau sont arrondies à 2,5 kg (5 lb), la plus petite progression en salle.</p>
+  </section>
+
+  <section>
+    <h2>À quoi ça sert<span class="dot">.</span></h2>
+    <p><strong>Choisir tes charges de départ.</strong> Un programme indique 3 × 8 ? Prends la charge qui correspond à 8 répétitions dans le tableau, puis enlève un peu pour garder 1 ou 2 répétitions en réserve.</p>
+    <p><strong>Suivre ta progression sans tester ton max.</strong> Tester un vrai 1RM est fatigant et risqué. Comparer ton 1RM estimé d'un mois à l'autre suffit à savoir si tu progresses.</p>
+  </section>
+
+  <div class="app-cta">
+    <img src="./icon-192.png" alt="" width="64" height="64">
+    <div class="txt">
+      <strong>Ton 1RM, calculé à chaque séance</strong>
+      <p>PPL Tracker estime ton 1RM à partir de tes séries et détecte tes records automatiquement. Tu vois ta progression sans rien calculer. Gratuit, sans pub, sans compte.</p>
+    </div>
+    <a class="btn" href="https://play.google.com/store/apps/details?id=com.ppltracker.workout&amp;hl=fr&amp;referrer=utm_source%3Dsite%26utm_medium%3Dcalculateur_1rm">Télécharger l'appli</a>
+  </div>
+
+  <section>
+    <h2>Questions fréquentes<span class="dot">.</span></h2>
+    <h3>Le calcul est-il le même pour tous les exercices ?</h3>
+    <p>Il fonctionne bien sur les exercices polyarticulaires (développé couché, squat, soulevé de terre, développé militaire). Sur les petits exercices d'isolation, il est moins précis.</p>
+    <h3>Faut-il tester son vrai 1RM ?</h3>
+    <p>Ce n'est pas nécessaire pour progresser. Si tu veux le faire, échauffe-toi bien, fais-le avec un pareur et des sécurités, et pas plus de quelques fois par an.</p>
+    <h3>Et ensuite ?</h3>
+    <p>Utilise ces charges avec le <a href="./programme-ppl.html">programme PPL gratuit</a>, et le <a href="./calculateur-disques.html">calculateur de disques</a> pour savoir quoi mettre sur la barre.</p>
+  </section>
+
+  <footer>
+    <div class="links">
+      <a href="./">PPL Tracker</a>
+      <a href="./programme-ppl.html">Programme PPL</a>
+      <a href="./calculateur-disques.html">Calculateur de disques</a>
+      <a href="./generateur-split.html">Générateur de split</a>
+      <a href="./alternative-strong-hevy.html">Alternative à Strong et Hevy</a>
+      <a href="./privacy.html">Confidentialité</a>
+    </div>
+    <p>PPL Tracker &copy; 2026</p>
+  </footer>
+</div>
+<script src="./assets/tools.js"></script>
+</body>
+</html>

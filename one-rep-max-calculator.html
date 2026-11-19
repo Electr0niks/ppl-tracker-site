@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free One Rep Max (1RM) Calculator: estimate your max and working weights</title>
+<meta name="description" content="Estimate your one-rep max from any set, without testing it. Get working weights for 1 to 20 reps, in kg or lb. Free, no sign-up.">
+<link rel="canonical" href="https://electr0niks.github.io/ppl-tracker-site/one-rep-max-calculator.html">
+<link rel="alternate" hreflang="en" href="https://electr0niks.github.io/ppl-tracker-site/one-rep-max-calculator.html">
+<link rel="alternate" hreflang="fr" href="https://electr0niks.github.io/ppl-tracker-site/calculateur-1rm.html">
+<link rel="alternate" hreflang="x-default" href="https://electr0niks.github.io/ppl-tracker-site/one-rep-max-calculator.html">
+<meta property="og:title" content="Free One Rep Max (1RM) Calculator">
+<meta property="og:description" content="Estimate your max from any set and get your weights for every rep count.">
+<meta property="og:image" content="https://electr0niks.github.io/ppl-tracker-site/icon-512.png">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./assets/site.css">
+</head>
+<body data-tool="1rm">
+<div class="container">
+
+  <header class="topbar">
+    <a class="brand" href="./"><img src="./icon-192.png" alt="" width="32" height="32">PPL <span>Tracker</span></a>
+    <nav class="topnav" aria-label="Resources">
+      <a href="./ppl-program.html">PPL program</a>
+      <a href="./one-rep-max-calculator.html" aria-current="page">1RM calculator</a>
+      <a href="./plate-calculator.html">Plates</a>
+      <a href="./workout-split-generator.html">Split</a>
+      <a href="./calculateur-1rm.html" lang="fr">FR</a>
+    </nav>
+  </header>
+
+  <div class="page-head">
+    <div class="kicker">Free tool</div>
+    <h1>One rep max calculator<span class="dot">.</span></h1>
+    <p class="lead">Enter a set you've done (weight and reps): you get your <strong>estimated 1RM</strong> and the weight to use for every rep count. No need to test your max.</p>
+  </div>
+
+  <div class="tool">
+    <div class="row">
+      <div class="field">
+        <label for="w">Weight lifted</label>
+        <input id="w" type="number" inputmode="decimal" min="0" step="0.5" value="80">
+      </div>
+      <div class="field">
+        <label for="r">Reps</label>
+        <input id="r" type="number" inputmode="numeric" min="1" max="30" step="1" value="6">
+      </div>
+      <div class="field">
+        <label>Unit</label>
+        <div class="seg" id="unit" role="group" aria-label="Unit">
+          <button type="button" data-value="kg" aria-pressed="true">kg</button>
+          <button type="button" data-value="lb" aria-pressed="false">lb</button>
+        </div>
+      </div>
+    </div>
+    <div class="result" id="out" aria-live="polite" hidden></div>
+  </div>
+
+  <section>
+    <h2>How it's calculated<span class="dot">.</span></h2>
+    <p>Your 1RM (one-rep max) is the heaviest weight you can lift once. The calculator averages two well-known formulas:</p>
+    <ul class="list">
+      <li><strong>Epley</strong>: weight × (1 + reps / 30)</li>
+      <li><strong>Brzycki</strong>: weight × 36 / (37 − reps)</li>
+    </ul>
+    <p>Both hold up well between 2 and 10 reps. Beyond that, the estimate depends a lot on your muscular endurance. Table weights are rounded to 2.5 kg (5 lb), the smallest jump in most gyms.</p>
+  </section>
+
+  <section>
+    <h2>What it's for<span class="dot">.</span></h2>
+    <p><strong>Picking starting weights.</strong> Program says 3 × 8? Take the 8-rep weight from the table, then drop it slightly so you keep 1 or 2 reps in reserve.</p>
+    <p><strong>Tracking progress without maxing out.</strong> Testing a true 1RM is tiring and risky. Comparing your estimated 1RM month to month tells you whether you're getting stronger.</p>
+  </section>
+
+  <div class="app-cta">
+    <img src="./icon-192.png" alt="" width="64" height="64">
+    <div class="txt">
+      <strong>Your 1RM, every session</strong>
+      <p>PPL Tracker estimates your 1RM from your sets and detects your PRs automatically, so you see your progress without doing the math. Free, no ads, no account.</p>
+    </div>
+    <a class="btn" href="https://play.google.com/store/apps/details?id=com.ppltracker.workout&amp;hl=en&amp;referrer=utm_source%3Dsite%26utm_medium%3Done_rep_max">Get the app</a>
+  </div>
+
+  <section>
+    <h2>FAQ<span class="dot">.</span></h2>
+    <h3>Does it work for every exercise?</h3>
+    <p>It works well for compound lifts (bench press, squat, deadlift, overhead press). It's less accurate on small isolation exercises.</p>
+    <h3>Should I test my real 1RM?</h3>
+    <p>You don't need to in order to progress. If you do, warm up properly, use a spotter and safety pins, and keep it to a few times a year.</p>
+    <h3>What next?</h3>
+    <p>Use these weights with the <a href="./ppl-program.html">free PPL program</a>, and the <a href="./plate-calculator.html">plate calculator</a> to know what to load on the bar.</p>
+  </section>
+
+  <footer>
+    <div class="links">
+      <a href="./">PPL Tracker</a>
+      <a href="./ppl-program.html">PPL program</a>
+      <a href="./plate-calculator.html">Plate calculator</a>
+      <a href="./workout-split-generator.html">Split generator</a>
+      <a href="./strong-hevy-alternative.html">Strong &amp; Hevy alternative</a>
+      <a href="./privacy.html">Privacy</a>
+    </div>
+    <p>PPL Tracker &copy; 2026</p>
+  </footer>
+</div>
+<script src="./assets/tools.js"></script>
+</body>
+</html>
