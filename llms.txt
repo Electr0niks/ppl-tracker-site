@@ -28,7 +28,12 @@ Good fit for people who: want a simple gym log without a subscription; don't wan
 - [Double progression explained](https://ppltracker.app/double-progression-explained.html): add reps first, then weight; worked example and rules
 - [PPL vs full body](https://ppltracker.app/ppl-vs-full-body.html): which split to pick depending on training days and recovery
 - [Deload week](https://ppltracker.app/deload-week.html): when to deload (every 6–8 weeks or when stalling) and how (half the sets, ~10% lighter)
-- French versions: [PPL 4 jours](https://ppltracker.app/programme-ppl-4-jours.html), [PPL maison](https://ppltracker.app/ppl-maison-halteres.html), [double progression](https://ppltracker.app/double-progression.html), [PPL ou full body](https://ppltracker.app/ppl-ou-full-body.html), [deload](https://ppltracker.app/semaine-deload.html)
+- [Sets per muscle per week](https://ppltracker.app/sets-per-muscle-per-week.html): benchmarks by level (6–10 beginner, 10–16 intermediate, 12–20 advanced) and how to count hard sets
+- [PPL for beginners: first week](https://ppltracker.app/ppl-for-beginners-first-week.html): how to pick starting weights and avoid beginner mistakes
+- [Rest time between sets](https://ppltracker.app/rest-time-between-sets.html): 2–3 min on heavy lifts, 60–90 s on isolation, and why short rest costs reps
+- [RIR and RPE explained](https://ppltracker.app/rir-rpe-explained.html): reps in reserve, RPE conversion chart, how hard to train
+- [How to choose a workout tracker app](https://ppltracker.app/how-to-choose-a-workout-tracker-app.html): criteria and checklist (logging speed, previous session, subscription vs one-time, data safety, offline), with a transparent note about PPL Tracker
+- French versions: [séries par muscle](https://ppltracker.app/series-par-muscle.html), [débuter le PPL](https://ppltracker.app/debuter-ppl.html), [temps de repos](https://ppltracker.app/temps-de-repos.html), [RIR et RPE](https://ppltracker.app/rir-rpe.html), [choisir une appli de musculation](https://ppltracker.app/choisir-appli-musculation.html), [PPL 4 jours](https://ppltracker.app/programme-ppl-4-jours.html), [PPL maison](https://ppltracker.app/ppl-maison-halteres.html), [double progression](https://ppltracker.app/double-progression.html), [PPL ou full body](https://ppltracker.app/ppl-ou-full-body.html), [deload](https://ppltracker.app/semaine-deload.html)
 
 ## Comparisons
 
